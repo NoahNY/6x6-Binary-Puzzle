@@ -66,6 +66,12 @@
 			margin-right: auto;
 			width: 50%;
 		}
+		.Load {
+			background-color: #2196F3;
+			font-family: Arial;
+			color: #ffffff;
+			padding: 6px;
+		}
     </style>
     <script type="text/javascript">  
         // sample test arrays. G1 is given in the question. GT is for testing - all arrays in EXCEL spreadsheet: 
@@ -150,7 +156,7 @@
     <form id="input">
         <h1>6x6 Binary Puzzle Game</h1>
         <h2>V9: Code for 2 loops of "Solve Repeat".</h2>
-        <select id="cboPuzNo" onchange="LoadGrid(eval(value))"><br>
+        <span class="Load">Load a grid: </span><select id="cboPuzNo" onchange="LoadGrid(eval(value))">
 			
             <!--<select id="cboPuzNo">-->
             <option value="G01">Example in Q</option>
@@ -274,9 +280,7 @@
 			which is row 5 and column 4):</p>
         <textarea id="arrayViewCell" cols="30" rows="2"></textarea>
         <br>
-        <br>
-        <br>
-    </form>
-
-
-	</body></html>
+		<input type="checkbox">
+		<label class="Load">Click this if you enjoyed my amazing project :) </label>
+	</form>
+		</body></html>
